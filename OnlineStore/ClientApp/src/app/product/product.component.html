@@ -1,0 +1,16 @@
+
+<div *ngFor="let product of productList">
+  <table>
+    <span>
+      <th>Name</th>
+      <th>Price</th>
+      <tr>
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
+        <!--<td><img src="../../assets/images/Home Image.jfif" style="width:10vw; height:10vh"/></td>-->
+      </tr>
+
+      <button class="btn-primary" (click)="navigateToProductDetailsPage()" style="height:4vh; width:4vw">Show</button>
+    </span>
+  </table>
+</div>
